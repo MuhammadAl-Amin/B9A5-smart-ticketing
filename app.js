@@ -58,15 +58,18 @@ function grandTotal(){
     
 
     let couponValue = document.getElementById('coupon-value').value;
+    let applyField = document.getElementById('apply-field');
     if(couponValue === 'NEW15'){
         let newOffer = .15 * grandTotalAmount;
         let newOfferTotal = grandTotalAmount - newOffer;
         addInnerText('grand-total', newOfferTotal);
+        applyField.style.display = 'none';
     }
     else if(couponValue === 'couple 20'){
         let coupleOffer = .20 * grandTotalAmount;
         let coupleOfferTotal = grandTotalAmount - coupleOffer;
         addInnerText('grand-total', coupleOfferTotal);
+        applyField.style.display = 'none';
     }
     else{
         console.log('Please take a valid coupon.')
