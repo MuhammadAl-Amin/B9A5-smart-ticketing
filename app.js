@@ -20,6 +20,8 @@ for (const btn of allBtn){
         const p2 = document.createElement('p');
         p2.innerText = 550;
 
+        e.target.setAttribute("disabled","true");
+
         li.appendChild(p);
         li.appendChild(p1);
         li.appendChild(p2);
@@ -33,7 +35,7 @@ for (const btn of allBtn){
 
         addInnerText('cost', sum);
         addInnerText('non-booked', availableSeat);
-        addInnerText('seat-badge', seat)
+        addInnerText('seat-badge',seat)
         grandTotal('cost', sum)
         
     })
