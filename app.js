@@ -4,7 +4,7 @@ let seat = 0;
 
 for (const btn of allBtn){
     btn.addEventListener('click', function(e) {
-        btn.style.backgroundColor = "#1DD100";
+        
         availableSeat = availableSeat - 1;
         seat = seat + 1;
         const seatNumber = e.target.innerText;
@@ -25,13 +25,19 @@ for (const btn of allBtn){
         li.appendChild(p);
         li.appendChild(p1);
         li.appendChild(p2);
-        mainContainer.appendChild(li);
+
 
         let costAmount = parseInt(document.getElementById('cost').innerText);
         let totalCost = parseInt(p2.innerText);
         
         const sum = costAmount + totalCost;
 
+        if(sum > 2200){
+            alert('Maximum booked 4.');
+            return;
+        }
+        btn.style.backgroundColor = "#1DD100";
+        mainContainer.appendChild(li);
 
         addInnerText('cost', sum);
         addInnerText('non-booked', availableSeat);
