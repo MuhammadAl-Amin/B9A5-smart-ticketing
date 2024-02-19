@@ -417,7 +417,31 @@
               <p class="text-base font-semibold mb-4">Email ID*</p>
               <input class="py-3 px-2 border-2 rounded-lg w-full" type="email" name="" id="" placeholder="Enter your email id.">
             </div>
-            <p class="m-1"><button class="btn btn-block bg-[#1DD100] mb-6 text-white">Next</button></p>
+            <!-- <p class="m-1"><button onclick="setModal()" class="btn btn-block bg-[#1DD100] mb-6 text-white">Next</button>
+            </p> -->
+            <div class="m-1">
+              <!-- The button to open modal -->
+              <label for="my_modal_7" class="btn btn-block bg-[#1DD100]">Next</label>
+              <input type="checkbox" id="my_modal_7" class="modal-toggle" />
+              <div class="modal" role="dialog">
+                <div class="modal-box">
+                  <div class="card w-full bg-base-100 ">
+                    <figure class="px-10 pt-10">
+                      <img src="images/success.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <p class="text-[1.25rem] font-medium">Thank you for Booking Our Bus Seats. 
+                        We are working hard to find the best service and deals for you</p>
+                        <h1 class="text-[1.25rem] font-light">Shortly you will find a confirmation in your email.</h1>
+                      <div class="card-actions">
+                        <button class="btn btn-success px-[5rem]">continue</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <label class="modal-backdrop" for="my_modal_7">Close</label>
+              </div>
+            </div>
     
             <div class="flex justify-between class="m-1"">
               <div>
