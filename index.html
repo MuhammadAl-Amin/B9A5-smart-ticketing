@@ -56,7 +56,7 @@
         <div class="bg-[url('images/banner.png')] bg-no-repeat lg:w-[73rem] h-[34rem] mx-auto flex flex-col items-center">
           <p class="text-center text-[#FFFFFF] font-extrabold text-[3rem] w-[45rem] mx-auto mt-16">End-to-End Travel with <br> <span class="text-center text-[#1DD100]">P Parivohon</span></p>
           <p class="w-1/2 text-center text-[1.14rem] text-[#ffffffB3] font-normal font-Inter mt-4 mb-9">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
-          <button class="btn bg-[#1DD100] mt-8 mb-9">Buy Tickets</button>
+          <button class="btn bg-[#1DD100] mt-8 mb-9"><a href="#bus-ticket">Buy Tickets</a></button>
         </div>
         <div class="absolute bottom-3 right-32">
           <div class="flex gap-6">
@@ -107,7 +107,7 @@
             </div>
             <div class="flex  flex-col justify-center items-center">
               <p class="text-3xl font-bold font-Raleway">NEW15</p>
-              <p class="text-xl font-medium">coupon code</p>
+              <p class="text-xl text-[#03071280] font-medium">coupon code</p>
             </div>
           </div>
           <div class="w-[35rem] h-[13rem] bg-[#F78C9C] flex rounded-3xl">
@@ -121,7 +121,7 @@
             </div>
             <div class="flex  flex-col justify-center items-center">
               <p class="text-3xl font-bold font-Raleway">couple 20</p>
-              <p class="text-xl font-medium">coupon code</p>
+              <p class="text-xl text-[#03071280] font-medium">coupon code</p>
             </div>
           </div>
         </div>
@@ -130,7 +130,7 @@
         </div>
       </section>
 
-      <!-- -----------------------------Paribahan details--------------------------------------------------- -->
+      <!-- ----------------------------- Paribahan details--------------------------------------------------- -->
 
       <section class="border-t-2 rounded-t-[5.5rem] border-[#1DD100] bg-[#F7F8F8]  mb-[7.8rem]">
         <div class="mt-[7rem] mb-[3rem]">
@@ -142,7 +142,7 @@
         <!-- ----------------------------------Paribhan Service----------------------------------------- -->
         <div class="flex justify-center items-center w-[75rem] mx-auto bg-white border-0 rounded-xl mb-[1.6rem]">
           <div class=" m-[2rem]">
-            <div class="flex justify-between">
+            <div id="bus-ticket" class="flex justify-between">
               <div class="flex gap-4 justify-center items-center mb-[1.5rem]">
                 <p class="w-[4rem] h-[3rem]"><img src="images/bus-logo.png" alt=""></p>
                 <div>
@@ -151,7 +151,7 @@
                 </div>
               </div>
               <div>
-                <button class="btn  bg-[#1DD10066] text-[#1DD100]"><img src="images/seat-green.png" alt="">40 seats left</button>
+                <button class="btn  bg-[#1DD10066] text-[#1DD100]"><img src="images/seat-green.png" alt=""><span id="non-booked">40</span> seats left</button>
               </div>
             </div>
             <div class="flex flex-col gap-4 w-[50rem] h-[16rem] p-[2rem] bg-[#F7F8F8] rounded-lg">
@@ -177,7 +177,7 @@
           </div>
           <div class="w-32 h-20 flex flex-col justify-center items-center">
             <p><img src="images/fare.png" alt=""></p>
-            <p class="text-2xl font-bold">550 Taka</p>
+            <p class="text-2xl font-bold"><span id="per-seat">550</span> Taka</p>
             <p>Per Seat</p>
           </div>
         </div>
@@ -217,14 +217,14 @@
                   <div class="flex items-center gap-[1.5rem]">
                     <p class="text-[1.12rem] text-[#03071280] font-medium">A</p>
                     <div class="flex gap-[2rem]">
-                      <p class="text-[1.12rem] font-medium"><button class="btn text-[#03071280]">A1</button></p>
-                      <p class="text-[1.12rem] font-medium"><button class="btn text-[#03071280]">A2</button></p>
+                      <p class="text-[1.12rem] font-medium"><button id="a1" class="btn add-btn text-[#03071280]">A1</button></p>
+                      <p class="text-[1.12rem] font-medium"><button id="a2" class="btn add-btn text-[#03071280]">A2</button></p>
                     </div>
                   </div>
                 </div>
                 <div class="grid grid-cols-2 gap-[2rem]">
-                  <p class="text-[1.12rem] font-medium"><button class="btn text-[#03071280]">A3</button></p>
-                  <p class="text-[1.12rem] font-medium"><button class="btn text-[#03071280]">A4</button></p>
+                  <p class="text-[1.12rem] font-medium"><button class="btn add-btn text-[#03071280]">A3</button></p>
+                  <p class="text-[1.12rem] font-medium"><button class="btn add-btn text-[#03071280]">A4</button></p>
                 </div>
               </div>
               <!---------------------------------------- B ----------------------------------------------- -->
@@ -233,14 +233,14 @@
                   <div class="flex items-center gap-[1.5rem]">
                     <p class="text-[1.12rem] text-[#03071280] font-medium">B</p>
                     <div class="flex gap-[2rem]">
-                      <p class="text-[1.12rem] font-medium"><button class="btn text-[#03071280]">B1</button></p>
-                      <p class="text-[1.12rem] font-medium"><button class="btn text-[#03071280]">B2</button></p>
+                      <p class="text-[1.12rem] font-medium"><button class="btn add-btn text-[#03071280]">B1</button></p>
+                      <p class="text-[1.12rem] font-medium"><button class="btn add-btn text-[#03071280]">B2</button></p>
                     </div>
                   </div>
                 </div>
                 <div class="grid grid-cols-2 gap-[2rem]">
-                  <p class="text-[1.12rem] font-medium"><button class="btn text-[#03071280]">B3</button></p>
-                  <p class="text-[1.12rem] font-medium"><button class="btn text-[#03071280]">B4</button></p>
+                  <p class="text-[1.12rem] font-medium"><button class="btn add-btn text-[#03071280]">B3</button></p>
+                  <p class="text-[1.12rem] font-medium"><button class="btn add-btn text-[#03071280]">B4</button></p>
                 </div>
               </div>
               <!-- ------------------------------------- C ------------------------------------------- -->
@@ -249,14 +249,14 @@
                   <div class="flex items-center gap-[1.5rem]">
                     <p class="text-[1.12rem] text-[#03071280] font-medium">C</p>
                     <div class="flex gap-[2rem]">
-                      <p class="text-[1.12rem] font-medium"><button class="btn text-[#03071280]">C1</button></p>
-                      <p class="text-[1.12rem] font-medium"><button class="btn text-[#03071280]">C2</button></p>
+                      <p class="text-[1.12rem] font-medium"><button class="btn add-btn text-[#03071280]">C1</button></p>
+                      <p class="text-[1.12rem] font-medium"><button class="btn add-btn text-[#03071280]">C2</button></p>
                     </div>
                   </div>
                 </div>
                 <div class="grid grid-cols-2 gap-[2rem]">
-                  <p class="text-[1.12rem] font-medium"><button class="btn text-[#03071280]">C3</button></p>
-                  <p class="text-[1.12rem] font-medium"><button class="btn text-[#03071280]">C4</button></p>
+                  <p class="text-[1.12rem] font-medium"><button class="btn add-btn text-[#03071280]">C3</button></p>
+                  <p class="text-[1.12rem] font-medium"><button class="btn add-btn text-[#03071280]">C4</button></p>
                 </div>
               </div>
               <!----------------------------------------- D-------------------------------------- -->
@@ -265,14 +265,14 @@
                   <div class="flex items-center gap-[1.5rem]">
                     <p class="text-[1.12rem] text-[#03071280] font-medium">D</p>
                     <div class="flex gap-[2rem]">
-                      <p class="text-[1.12rem] font-medium"><button class="btn text-[#03071280]">D1</button></p>
-                      <p class="text-[1.12rem] font-medium"><button class="btn text-[#03071280]">D2</button></p>
+                      <p class="text-[1.12rem] font-medium"><button class="btn add-btn text-[#03071280]">D1</button></p>
+                      <p class="text-[1.12rem] font-medium"><button class="btn add-btn text-[#03071280]">D2</button></p>
                     </div>
                   </div>
                 </div>
                 <div class="grid grid-cols-2 gap-[2rem]">
-                  <p class="text-[1.12rem] font-medium"><button class="btn text-[#03071280]">D3</button></p>
-                  <p class="text-[1.12rem] font-medium"><button class="btn text-[#03071280]">D4</button></p>
+                  <p class="text-[1.12rem] font-medium"><button class="btn add-btn text-[#03071280]">D3</button></p>
+                  <p class="text-[1.12rem] font-medium"><button class="btn add-btn text-[#03071280]">D4</button></p>
                 </div>
               </div>
               <!----------------------------------------- E-------------------------------------- -->
@@ -281,14 +281,14 @@
                   <div class="flex items-center gap-[1.5rem]">
                     <p class="text-[1.12rem] text-[#03071280] font-medium">E</p>
                     <div class="flex gap-[2rem]">
-                      <p class="text-[1.12rem] font-medium"><button class="btn text-[#03071280]">E1</button></p>
-                      <p class="text-[1.12rem] font-medium"><button class="btn text-[#03071280]">E2</button></p>
+                      <p class="text-[1.12rem] font-medium"><button class="btn add-btn text-[#03071280]">E1</button></p>
+                      <p class="text-[1.12rem] font-medium"><button class="btn add-btn text-[#03071280]">E2</button></p>
                     </div>
                   </div>
                 </div>
                 <div class="grid grid-cols-2 gap-[2rem]">
-                  <p class="text-[1.12rem] font-medium"><button class="btn text-[#03071280]">E3</button></p>
-                  <p class="text-[1.12rem] font-medium"><button class="btn text-[#03071280]">E4</button></p>
+                  <p class="text-[1.12rem] font-medium"><button class="btn add-btn text-[#03071280]">E3</button></p>
+                  <p class="text-[1.12rem] font-medium"><button class="btn add-btn text-[#03071280]">E4</button></p>
                 </div>
               </div>
               <!----------------------------------------- F-------------------------------------- -->
@@ -297,14 +297,14 @@
                   <div class="flex items-center gap-[1.5rem]">
                     <p class="text-[1.12rem] text-[#03071280] font-medium">F</p>
                     <div class="flex gap-[2rem]">
-                      <p class="text-[1.12rem] font-medium"><button class="btn text-[#03071280]">F1</button></p>
-                      <p class="text-[1.12rem] font-medium"><button class="btn text-[#03071280]">F2</button></p>
+                      <p class="text-[1.12rem] font-medium"><button class="btn add-btn text-[#03071280]">F1</button></p>
+                      <p class="text-[1.12rem] font-medium"><button class="btn add-btn text-[#03071280]">F2</button></p>
                     </div>
                   </div>
                 </div>
                 <div class="grid grid-cols-2 gap-[2rem]">
-                  <p class="text-[1.12rem] font-medium"><button class="btn text-[#03071280]">F3</button></p>
-                  <p class="text-[1.12rem] font-medium"><button class="btn text-[#03071280]">F4</button></p>
+                  <p class="text-[1.12rem] font-medium"><button class="btn add-btn text-[#03071280]">F3</button></p>
+                  <p class="text-[1.12rem] font-medium"><button class="btn add-btn text-[#03071280]">F4</button></p>
                 </div>
               </div>
               <!----------------------------------------- G-------------------------------------- -->
@@ -313,14 +313,14 @@
                   <div class="flex items-center gap-[1.5rem]">
                     <p class="text-[1.12rem] text-[#03071280] font-medium">G</p>
                     <div class="flex gap-[2rem]">
-                      <p class="text-[1.12rem] font-medium"><button class="btn text-[#03071280]">G1</button></p>
-                      <p class="text-[1.12rem] font-medium"><button class="btn text-[#03071280]">G2</button></p>
+                      <p class="text-[1.12rem] font-medium"><button class="btn add-btn text-[#03071280]">G1</button></p>
+                      <p class="text-[1.12rem] font-medium"><button class="btn add-btn text-[#03071280]">G2</button></p>
                     </div>
                   </div>
                 </div>
                 <div class="grid grid-cols-2 gap-[2rem]">
-                  <p class="text-[1.12rem] font-medium"><button class="btn text-[#03071280]">G3</button></p>
-                  <p class="text-[1.12rem] font-medium"><button class="btn text-[#03071280]">G4</button></p>
+                  <p class="text-[1.12rem] font-medium"><button class="btn add-btn text-[#03071280]">G3</button></p>
+                  <p class="text-[1.12rem] font-medium"><button class="btn add-btn text-[#03071280]">G4</button></p>
                 </div>
               </div>
               <!----------------------------------------- H-------------------------------------- -->
@@ -329,14 +329,14 @@
                   <div class="flex items-center gap-[1.5rem]">
                     <p class="text-[1.12rem] text-[#03071280] font-medium">H</p>
                     <div class="flex gap-[2rem]">
-                      <p class="text-[1.12rem] font-medium"><button class="btn text-[#03071280]">H1</button></p>
-                      <p class="text-[1.12rem] font-medium"><button class="btn text-[#03071280]">H2</button></p>
+                      <p class="text-[1.12rem] font-medium"><button class="btn add-btn text-[#03071280]">H1</button></p>
+                      <p class="text-[1.12rem] font-medium"><button class="btn add-btn text-[#03071280]">H2</button></p>
                     </div>
                   </div>
                 </div>
                 <div class="grid grid-cols-2 gap-[2rem]">
-                  <p class="text-[1.12rem] font-medium"><button class="btn text-[#03071280]">H3</button></p>
-                  <p class="text-[1.12rem] font-medium"><button class="btn text-[#03071280]">H4</button></p>
+                  <p class="text-[1.12rem] font-medium"><button class="btn add-btn text-[#03071280]">H3</button></p>
+                  <p class="text-[1.12rem] font-medium"><button class="btn add-btn text-[#03071280]">H4</button></p>
                 </div>
               </div>
               <!----------------------------------------- I-------------------------------------- -->
@@ -345,14 +345,14 @@
                   <div class="flex items-center gap-[1.5rem]">
                     <p class="text-[1.12rem] text-[#03071280] font-medium">I</p>
                     <div class="flex gap-[2rem]">
-                      <p class="text-[1.12rem] font-medium"><button class="btn text-[#03071280]">I1</button></p>
-                      <p class="text-[1.12rem] font-medium"><button class="btn text-[#03071280]">I2</button></p>
+                      <p class="text-[1.12rem] font-medium"><button class="btn add-btn text-[#03071280]">I1</button></p>
+                      <p class="text-[1.12rem] font-medium"><button class="btn add-btn text-[#03071280]">I2</button></p>
                     </div>
                   </div>
                 </div>
                 <div class="grid grid-cols-2 gap-[2rem]">
-                  <p class="text-[1.12rem] font-medium"><button class="btn text-[#03071280]">I3</button></p>
-                  <p class="text-[1.12rem] font-medium"><button class="btn text-[#03071280]">I4</button></p>
+                  <p class="text-[1.12rem] font-medium"><button class="btn add-btn text-[#03071280]">I3</button></p>
+                  <p class="text-[1.12rem] font-medium"><button class="btn add-btn text-[#03071280]">I4</button></p>
                 </div>
               </div>
               <!----------------------------------------- J-------------------------------------- -->
@@ -361,14 +361,14 @@
                   <div class="flex items-center gap-[1.5rem]">
                     <p class="text-[1.12rem] text-[#03071280] font-medium">J</p>
                     <div class="flex gap-[2rem]">
-                      <p class="text-[1.12rem] font-medium"><button class="btn text-[#03071280]">J1</button></p>
-                      <p class="text-[1.12rem] font-medium"><button class="btn text-[#03071280]">J2</button></p>
+                      <p class="text-[1.12rem] font-medium"><button class="btn add-btn text-[#03071280]">J1</button></p>
+                      <p class="text-[1.12rem] font-medium"><button class="btn add-btn text-[#03071280]">J2</button></p>
                     </div>
                   </div>
                 </div>
                 <div class="grid grid-cols-2 gap-[2rem]">
-                  <p class="text-[1.12rem] font-medium"><button class="btn text-[#03071280]">J3</button></p>
-                  <p class="text-[1.12rem] font-medium"><button class="btn text-[#03071280]">J4</button></p>
+                  <p class="text-[1.12rem] font-medium"><button class="btn add-btn text-[#03071280]">J3</button></p>
+                  <p class="text-[1.12rem] font-medium"><button class="btn add-btn text-[#03071280]">J4</button></p>
                 </div>
               </div>
               
@@ -382,28 +382,26 @@
             <hr class="my-6">
             <div class="bg-[#F7F8F8] w-[27rem]  p-6 rounded-lg mb-6">
               <div class="flex justify-between ">
-                <p class="text-base font-medium">Seat</p>
+                <p class="text-base font-medium">Seat<span id="seat-badge" class="badge bg-[#1DD100] text-white">0</span></p>
                 <p class="text-base font-medium">Class</p>
                 <p class="text-base font-medium">Price</p>
               </div>
               <hr class="my-4">
-              <div class="flex justify-between">
-                <p>C1</p>
-                <p>Economy</p>
-                <p>500</p>
-              </div>
+              <ul id="seat-details" class="flex flex-col">
+
+              </ul>
               <hr class="my-4">
               <div class="flex justify-between mb-4">
                 <p class="text-base font-medium">Total Price</p>
-                <p class="text-base font-medium">BDT 1100</p>
+                <p class="text-base font-medium">BDT <span id="cost">0</span></p>
               </div>
               <div class="flex justify-between items-center p-3 bg-white rounded-xl mb-6">
-                <p><input type="text" name="" id="" placeholder="Have any coupon?"></p>
-                <p><button class="btn bg-[#1DD100] text-white">Apply</button></p>
+                <p><input id="coupon-value" type="text" name="" id="" placeholder="Have any coupon?"></p>
+                <p><button onclick="grandTotal()" class="btn bg-[#1DD100] text-white">Apply</button></p>
               </div>
               <div class="flex justify-between">
                 <p>Grand Total</p>
-                <p>00000</p>
+                <p id="grand-total">00000</p>
               </div>
             </div>
             <!---------------------------------------- Passenger information-------------------------- -->
@@ -456,5 +454,8 @@
         </div>
       </div>
     </footer>
+
+    <!-- <script src="index.js"></script> -->
+    <script src="app.js"></script>
 </body>
 </html>
